@@ -119,15 +119,6 @@ b = y.round(2)
 
 print("output for new x value",b)
 
-# Adding the newly predicted value into orginal dataset:
-c =pd.DataFrame({"Sorting Time":a_new,"Delivery Time":y[0]},index=[0])
-df=df.append(c,ignore_index=True)
-df
-
-import matplotlib.pyplot as plt
-plt.scatter(x=df["Sorting Time"],y=df["Delivery Time"],color='red')
-plt.plot(df["Sorting Time"],Ypred,color="black")
-plt.show()
 
 
 
